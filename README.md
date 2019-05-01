@@ -1,1 +1,1 @@
-Odoo 10
+Modulo desarrollado para odoo 10 incluyendo sistema de control de versiones con git
