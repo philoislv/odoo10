@@ -3,15 +3,14 @@
     'name': "CDPELOTAS3763Y",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+       Modulo de para tarea Online 4 de Sistemas de Gestión Empresarial""",
 
     'description': """
-        Long description of module's purpose
+         Modulo de para tarea Online 4 de Sistemas de Gestión Empresarial
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Antonio Olmo López",
+    'website': "www.iestrassierra.conm",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/10.0/odoo/addons/base/module/module_data.xml
