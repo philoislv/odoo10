@@ -1,0 +1,44 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="cdpelotas3763_y.list_deportes">
+      <field name="name">CDPELOTAS3763Y.deportes.tree</field>
+      <field name="model">cdpelotas3763_y.deportes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre_deporte"/>
+          <field name="instalaciones_asociadas"/>
+        </tree>
+      </field>
+    </record>
+  <record model="ir.ui.view" id="cdpelotas3763_y.list_form">
+      <field name="name">CDPELOTAS3763Y.deportes.form</field>
+      <field name="model">cdpelotas3763_y.deportes</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <div><h1>Alta de Deportes</h1></div>
+            <group colspan="2" col="2">
+                <field name="nombre_deporte"/>
+                <field name="instalaciones_asociadas">
+                    <tree string="Instalaciones asociadas">
+                        <field name="nombre_pista"/>
+                    </tree>
+                </field> 
+            </group>
+            
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window">
+      <field name="name">Gestion de Deportes</field>
+      <field name="res_model">cdpelotas3763_y.deoortes</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Deportes" id="cdpelotas3763_y.deportes" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window"/>
+  </data>
+</odoo>

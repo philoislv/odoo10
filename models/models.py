@@ -1,5 +1,14 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
+#Modelo Deporte
+class Deporte(models.Model):
+ _name = 'cdpelotas3763_y.deportes'
+ nombre_deporte = fields.String(string="Nombre del Derpote")
+ instalaciones_asociadas=fields.One2Many(
+    comodel_name="cdpelotas3763_y.instalaciones",
+    inverse_name="deporte_asociado",
+    string="Instalaciones Asociadas"
+ )
 #Modelo Socio
 class Socio(models.Model):
  _name = 'cdpelotas3763_y.socios'
@@ -21,4 +30,5 @@ class Instalaciones(models.Model):
  precio = fields.Integer(string="Precio/hora de la pista")
  estado = fields.Selection([('disponible','Disponible'),('mantenimiento','Mantenimiento')])
  #Campo deporte
+ deporte_asociado=fields.Many2one("cdpelotas3763_y.deportes",string= "Deporte")
  #Campo reservas
