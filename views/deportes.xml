@@ -19,11 +19,7 @@
             <div><h1>Alta de Deportes</h1></div>
             <group colspan="2" col="2">
                 <field name="nombre_deporte"/>
-                <field name="instalaciones_asociadas">
-                    <tree string="Instalaciones asociadas">
-                        <field name="nombre_pista"/>
-                    </tree>
-                </field> 
+                <field name="instalaciones_asociadas"/>
             </group>
             
           </sheet>
