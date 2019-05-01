@@ -4,7 +4,7 @@ from odoo import models, fields, api
 class Deporte(models.Model):
  _name = 'cdpelotas3763_y.deportes'
  nombre_deporte = fields.String(string="Nombre del Derpote")
- instalaciones_asociadas=fields.One2Many(
+ instalaciones_asociadas=fields.One2many(
     comodel_name="cdpelotas3763_y.instalaciones",
     inverse_name="deporte_asociado",
     string="Instalaciones Asociadas"
