@@ -2,12 +2,9 @@
 {
     'name': "CDPELOTAS3763Y",
 
-    'summary': """
-       Modulo de para tarea Online 4 de Sistemas de Gestión Empresarial""",
+    'summary': "Modulo de para tarea Online 4 de Sistemas de Gestión Empresarial",
 
-    'description': """
-         Modulo de para tarea Online 4 de Sistemas de Gestión Empresarial
-    """,
+    'description': "Modulo de para tarea Online 4 de Sistemas de Gestión Empresarial",
 
     'author': "Antonio Olmo López",
     'website': "www.iestrassierra.conm",
