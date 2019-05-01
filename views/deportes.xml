@@ -1,6 +1,6 @@
 <odoo>
   <data>
-    <record model="ir.ui.view" id="cdpelotas3763_y.list_deportes">
+  <record model="ir.ui.view" id="cdpelotas3763_y.list_deportes">
       <field name="name">CDPELOTAS3763Y.deportes.tree</field>
       <field name="model">cdpelotas3763_y.deportes</field>
       <field name="arch" type="xml">
@@ -9,7 +9,7 @@
           <field name="instalaciones_asociadas"/>
         </tree>
       </field>
-    </record>
+  </record>
   <record model="ir.ui.view" id="cdpelotas3763_y.list_form">
       <field name="name">CDPELOTAS3763Y.deportes.form</field>
       <field name="model">cdpelotas3763_y.deportes</field>
