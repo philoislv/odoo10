@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="cdpelotas3763_y.list">
+      <field name="name">CDPELOTAS3763Y list</field>
+      <field name="model">cdpelotas3763_y.cdpelotas3763_y</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window">
+      <field name="name">CDPELOTAS3763Y window</field>
+      <field name="res_model">cdpelotas3763_y.cdpelotas3763_y</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="cdpelotas3763_y.action_server">
+      <field name="name">CDPELOTAS3763Y server</field>
+      <field name="model_id" ref="model_cdpelotas3763_y_cdpelotas3763_y"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="cdpelotas3763_y.menu_1" parent="cdpelotas3763_y.menu_root"/>
+    <menuitem name="Menu 2" id="cdpelotas3763_y.menu_2" parent="cdpelotas3763_y.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="cdpelotas3763_y.menu_1_list" parent="cdpelotas3763_y.menu_1"
+              action="cdpelotas3763_y.action_window"/>
+    <menuitem name="Server to list" id="cdpelotas3763_y" parent="cdpelotas3763_y.menu_2"
+              action="cdpelotas3763_y.action_server"/>
+    -->
+  </data>
+</odoo>
