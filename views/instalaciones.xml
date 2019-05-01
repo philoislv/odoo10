@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="cdpelotas3763_y.list_instalaciones">
+      <field name="name">CDPELOTAS3763Y.instalaciones.tree</field>
+      <field name="model">cdpelotas3763_y.instalaciones</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="num_pista"/>
+          <field name="nombre_pista"/>
+          <field name="superficie"/>
+          <field name="luz"/>
+          <field name="precio"/>
+          <field name="estado"/>
+        </tree>
+      </field>
+    </record>
+  <record model="ir.ui.view" id="cdpelotas3763_y.list_form">
+      <field name="name">CDPELOTAS3763Y.socios.form</field>
+      <field name="model">cdpelotas3763_y.instalaciones</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <div><h1>Alta de Instalacion</h1></div>
+            <group colspan="2" col="2">
+                <field name="num_pista"/>
+                <field name="nombre_pista"/>
+                <field name="superficie"/>
+                <field name="luz"/>
+                <field name="precio"/>
+                <field name="estado"/>
+            </group>
+            
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="cdpelotas3763_y.action_window">
+      <field name="name">Gestion de Instalaciones</field>
+      <field name="res_model">cdpelotas3763_y.instalaciones</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    <menuitem name="CDPELOTAS3763Y" id="cdpelotas3763_y.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="instalaciones" id="cdpelotas3763_y.instalaciones" parent="cdpelotas3763_y.menu_root" action="cdpelotas3763_y.action_window"/>
+  
+  </data>
+</odoo>
